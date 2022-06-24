@@ -12,6 +12,7 @@ def test_similarity_scores():
         assert similarity == test[2]
 
 
+
 def test_correct_intent():
     test_cases = {
         "OK, your order is a large pizza and garlic bread." : "ConfirmItem", 
