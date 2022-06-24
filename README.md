@@ -10,6 +10,7 @@
 ```
 pip3 install pre-commit pytest
 pre-commit install
+docker-compose build
 docker-compose up
 ```
 
