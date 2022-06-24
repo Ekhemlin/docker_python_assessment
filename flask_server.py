@@ -16,7 +16,7 @@ def detectIntent():
             body = {"Error" : "Missing argument 'message' in request body"}
             status = 422
         payload = utils.formatReturnPayload(body, status)
-        return(payload)
+        return payload
     except Exception as e:
         body = {"Error" : str(e), "Message" : "Internal server error while detecting intent"}
         payload = utils.formatReturnPayload(body, 500)

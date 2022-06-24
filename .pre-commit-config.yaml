@@ -1,8 +1,10 @@
 repos:
--   repo: local
+  - repo: local
     hooks:
-    -   id: tests
-        name: Sentence scoring tests
+      - id: pytest-check
+        name: pytest-check
         entry: pytest
         language: system
+        always_run: true
         types: [python]
+        files: ''
