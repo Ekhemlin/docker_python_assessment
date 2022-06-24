@@ -6,7 +6,7 @@ def test_similarity_scores():
                   ["I'd like a medium supreme pizza.", "Can I get a pepperoni pizza, medium?",   0.3],
                   ["Hi there, how can I help you?", "Hi there, how can I help you?",   1.0],
                   ["Is your order for one large pizza?", "Thanks, please come again.",   0.0],
-                ]  
+                ]
     for test in test_cases:
         similarity = utils.jaccardSimilarity(test[0], test[1])
         assert similarity == test[2]
