@@ -3,6 +3,7 @@ repos:
     hooks:
       - id: pytest-check
         name: pytest-check
+        # Will run the tests in test_sentences.py
         entry: pytest
         language: system
         always_run: true
